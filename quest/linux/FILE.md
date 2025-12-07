@@ -4,22 +4,6 @@
 
 /etc/hosts ファイルの中身を出力してください。/etc/hosts ファイルが存在しない場合は、何らかのテキストファイルの中身を出力してください。
 
-cat /etc/hosts
-# Your system has configured 'manage_etc_hosts' as True.
-# As a result, if you wish for changes to this file to persist
-# then you will need to either
-# a.) make changes to the master file in /etc/cloud/templates/hosts.debian.tmpl
-# b.) change or remove the value of 'manage_etc_hosts' in
-#     /etc/cloud/cloud.cfg or cloud-config from user-data
-#
-127.0.1.1 ubuntu ubuntu
-127.0.0.1 localhost
-
-# The following lines are desirable for IPv6 capable hosts
-::1 localhost ip6-localhost ip6-loopback
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-
 ## 2. ファイルの中身をスクロール表示
 
 /etc/hosts ファイルの中身をスクロール式で表示してください。/etc/hosts ファイルが存在しない場合は、何らかのテキストファイルの中身を表示してください。
